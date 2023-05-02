@@ -1,36 +1,68 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Фитнес-центр Supergym">
-    <title>Фитнес-центр Supergym</title>
-    <link rel="preload" href="fonts/alumnisans-extrabold.woff2" as="font">
-    <link rel="preload" href="fonts/alumnisans-semibold.woff2" as="font">
-    <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font">
-    <link rel="preload" href="fonts/roboto-condensed-light.woff2" as="font">
-    <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font">
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Фитнес-центр Supergym">
+  <title>Фитнес-центр Supergym</title>
+  <link rel="preload" href="fonts/alumnisans-extrabold.woff2" as="font">
+  <link rel="preload" href="fonts/alumnisans-semibold.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-condensed-light.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <a class="header__logo" href="#">
+            <svg width="122" height="44">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <a class="header__phone" href="tel:88005555555">8-800-555-55-55</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
         <div class="container">
+          <div class="intro__container">
+            <div class="intro__wrapper">
+              <p>oмск</p>
+              <div class="intro__text">
+                <ul class="intro__list">
+                  <li class="intro__item">Тренажёрный&nbsp;зал</li>
+                  <li class="intro__item">Групповые&nbsp;занятия</li>
+                  <li class="intro__item">Кардио-зона</li>
+                </ul>
+                <h1>Фитнес центр</h2>
+              </div>
+              <button class="intro__button">Купить абонемент</button>
+            </div>
+            <div class="intro__image">
+              <picture>
+                <source type="image/webp" srcset="img/superman-image.webp 1x, img/superman-image@2x.webp 2x">
+                <img src="img/superman-image.jpg" srcset="img/superman-image@2x.jpg 2x" width="500" height="556"
+                  alt="Фотография спортсмена">
+              </picture>
+            </div>
+          </div>
 
         </div>
-      </header>
-      <main>
-        <section class="intro">
-          <div class="container">
-          </div>
-        </section>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
-    </div>
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+      </section>
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
+  </div>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>

@@ -34,7 +34,9 @@ $color-black-russian:               #030a1a;
 
 // Gradient
 
-$promo-background-gradient:         conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$intro-background-gradient:         conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$intro-background-gradient-tablet:  conic-gradient(from 155.49deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+$intro-background-gradient-mobile:  conic-gradient(from 167.26deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
 $video-button-gradient:             linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
 $border-gradient:                   linear-gradient(#d10a42 0%, #00359f 100%);
 $button-gradient:                   linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
@@ -72,7 +74,7 @@ $vp-320:                            320px;
 $vp-375:                            375px;
 $vp-768:                            768px;
 $vp-1024:                           1024px;
-$vp-1280:                           1280px;
+$vp-1200:                           1200px;
 $vp-1440:                           1440px;
 $vp-1920:                           1920px;
 
