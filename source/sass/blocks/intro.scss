@@ -114,7 +114,7 @@
   }
 }
 
-.intro__item {
+.intro__item a {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -122,9 +122,13 @@
   line-height: 21px;
   text-align: right;
   color: $color-default-white;
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
 }
 
-.intro__text h1 {
+.intro__text h2 {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;

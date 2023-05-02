@@ -1,0 +1,250 @@
+.gym {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 235px;
+
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 183px;
+  }
+
+  @include vp-767 {
+    padding-top: 63px;
+    padding-bottom: 70px;
+  }
+}
+
+.gym__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1190px;
+  padding-left: 75px;
+  padding-right: 15px;
+
+  @include vp-1199 {
+    padding: 0 45px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.gym__text {
+  max-width: 355px;
+  margin-top: 39px;
+
+  @include vp-1199 {
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 36px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 26px;
+    padding: 0 15px;
+  }
+}
+
+.gym__text h2 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: left;
+  letter-spacing: 0.03em;
+  color: $color-sapphire;
+  margin: 0;
+  margin-bottom: 7px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-left: -16px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+}
+
+.gym__text h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: left;
+  color: $color-sapphire;
+  margin: 0;
+  margin-bottom: 38px;
+
+  @include vp-1199 {
+    text-align: center;
+    margin-bottom: 33px;
+  }
+
+  @include vp-767 {
+    text-align: left;
+    margin-bottom: 24px;
+  }
+}
+
+.gym__text p {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: $color-sapphire;
+  margin: 0;
+
+  &:first-of-type {
+    margin-bottom: 8px;
+  }
+
+  @include vp-1199 {
+    text-align: center;
+    padding: 0 50px;
+
+    &:last-of-type {
+      display: none;
+    }
+  }
+
+  @include vp-767 {
+    text-align: left;
+    padding: 0;
+    padding-right: 28px;
+  }
+}
+
+.gym__image {
+  width: 660px;
+  height: 401px;
+  background-color: $color-ghost-white;
+
+  @include vp-1199 {
+    width: 678px;
+    height: 345px;
+    overflow: hidden;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    height: 313px;
+    margin-bottom: 40px;
+  }
+}
+
+.gym__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @include vp-1199 {
+    scale: 1.09;
+    object-position: bottom -33px right 28px;
+  }
+
+  @include vp-767 {
+    scale: 1;
+    object-position: bottom 0 right 0;
+  }
+}
+
+.gym__video {
+  position: absolute;
+  width: 364px;
+  height: 228px;
+  bottom: 119px;
+  left: 50%;
+  transform: translateX(-39%);
+  background: rgba(20, 54, 122, 0.5);
+
+  @include vp-1199 {
+    width: 266px;
+    height: 167px;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-49%);
+  }
+
+  @include vp-767 {
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transform: none;
+  }
+}
+
+.gym__video-image {
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 54, 122, 0.5);
+  }
+
+  @include vp-767 {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.gym__video img {
+  @include vp-767 {
+    width: 100%;
+    height: 167px;
+    object-fit: cover;
+  }
+}
+
+.gym__video-button {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-color: $color-transparent;
+  border-radius: 50%;
+  background-color: $color-transparent;
+  padding: 0;
+  cursor: pointer;
+  z-index: 3;
+
+  @include vp-1199 {
+    width: 73px;
+    height: 73px;
+    bottom: 47px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    border-color: $color-venetian-red;
+  }
+}
+
+.gym__video-button img {
+  width: 100%;
+  height: 100%;
+}
