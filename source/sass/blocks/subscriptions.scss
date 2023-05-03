@@ -1,0 +1,61 @@
+.subscriptions {
+  position: relative;
+  padding: 120px 0;
+  background-color: $color-ghost-white;
+
+  @include vp-1199 {
+    padding: 100px 0;
+  }
+
+  @include vp-767 {
+    padding-top: 63px;
+    padding-bottom: 70px;
+  }
+}
+
+.subscriptions__image {
+  position: absolute;
+  right: 0;
+  bottom: -150px;
+  overflow: hidden;
+
+  @include vp-1199 {
+    bottom: -126px;
+  }
+
+  @include vp-767 {
+   display: none;
+  }
+}
+
+.subscriptions__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.subscriptions h2 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $color-sapphire;
+  margin: 0;
+  margin-bottom: 17px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-left: -15px;
+    margin-bottom: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-left: -11px;
+  }
+}
