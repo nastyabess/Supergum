@@ -1,0 +1,140 @@
+.reviews {
+  padding-bottom: 121px;
+}
+
+.reviews__wrapper {
+  max-width: 672px;
+  padding: 0 56px;
+
+  @include vp-1199 {
+    max-width: 678px;
+  }
+
+  @include vp-767 {
+    padding: 0 32px;
+  }
+}
+
+.reviews__blockquote {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 54px;
+  padding-bottom: 59px;
+  padding-left: 62px;
+  padding-right: 62px;
+  background-color: $color-resolution-blue;
+  margin: 0;
+  justify-content: space-between;
+
+  @include vp-1199 {
+    padding-top: 55px;
+    padding-bottom: 59px;
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
+  @include vp-767 {
+    padding: 0 25px;
+    padding-top: 48px;
+    padding-bottom: 37px;
+    justify-content: center;
+  }
+}
+
+.reviews__text {
+  position: relative;
+  max-width: 436px;
+  padding-left: 108px;
+
+  @include vp-767 {
+    max-width: 206px;
+    padding-left: 0;
+  }
+}
+
+.reviews h2 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  text-align: center;
+  color: $color-sapphire;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 37px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.reviews__blockquote h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+  color: $color-default-white;
+  margin: 0;
+  margin-bottom: 13px;
+
+  @include vp-1199 {
+    margin-bottom: 12px;
+  }
+
+  @include vp-767 {
+    line-height: 26px;
+    padding-left: 100px;
+    margin-bottom: 22px;
+  }
+}
+
+.reviews__blockquote p {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+  color: $color-default-white;
+  margin: 0;
+
+  @include vp-767 {
+    text-align: center;
+  }
+}
+
+.reviews__slide-image {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 0;
+  left: 0;
+
+  @include vp-767 {
+    width: 68px;
+    height: 68px;
+    left: 16px;
+  }
+}
+
+.reviews__slide-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.reviews__button--prev {
+  left: 11px;
+}
+
+.reviews__button--next {
+  right: 11px;
+}

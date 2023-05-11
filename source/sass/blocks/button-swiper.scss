@@ -1,0 +1,40 @@
+.button-swiper--prev,
+.button-swiper--next {
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 34px;
+  border: none;
+  color: $color-dark-gray;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+  @include vp-767 {
+    width: 10px;
+    height: 19px;
+  }
+}
+
+.button-swiper--prev:not(:disabled):hover,
+.button-swiper--next:not(:disabled):hover {
+  color: $color-chambray;
+}
+
+.button-swiper--prev:disabled,
+.button-swiper--next:disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.button-swiper--prev {
+  transform: translateY(-50%);
+}
+
+.button-swiper--next {
+  transform: translateY(-50%) rotate(180deg);
+}
+
