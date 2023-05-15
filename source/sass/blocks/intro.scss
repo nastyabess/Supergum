@@ -16,8 +16,8 @@
 
 .intro__container {
   display: flex;
-  padding: 0 77px;
-  max-width: 1095px;
+  padding-left: 18px;
+  padding-right: 201px;
 
   @include vp-1199 {
     padding: 0;

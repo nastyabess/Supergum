@@ -136,7 +136,7 @@
 
   @include hover {
     border: 7px solid $color-transparent;
-    border-image: linear-gradient(to bottom right, #d10a42, #00359f);
+    border-image: $border-gradient;
     border-image-slice: 1;
 
     a {

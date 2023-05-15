@@ -38,10 +38,11 @@ $color-black-russian:               #030a1a;
 $intro-background-gradient:         conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 $intro-background-gradient-tablet:  conic-gradient(from 155.49deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 $intro-background-gradient-mobile:  conic-gradient(from 167.26deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
-$border-gradient:                   linear-gradient(#d10a42 0%, #00359f 100%);
+$border-gradient:                   linear-gradient(to bottom right, #d10a42, #00359f);
+$border-gradient-promotion:         linear-gradient(to bottom right, #d10a42, #00359f);
 $button-gradient:                   linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 $features-card-first:               linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
-$features-card-second:              linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+$features-card:                     linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
 
 
 // Typography

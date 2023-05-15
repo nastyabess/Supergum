@@ -1,10 +1,19 @@
 .reviews {
-  padding-bottom: 121px;
+  padding-bottom: 97px;
+
+  @include vp-1199 {
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 48px;
+  }
 }
 
 .reviews__wrapper {
   max-width: 672px;
   padding: 0 56px;
+  filter: drop-shadow(0px 0px 40px rgba(28, 51, 116, 0.2));
 
   @include vp-1199 {
     max-width: 678px;
@@ -27,14 +36,14 @@
   justify-content: space-between;
 
   @include vp-1199 {
-    padding-top: 55px;
+    padding-top: 54px;
     padding-bottom: 59px;
     padding-left: 65px;
     padding-right: 65px;
   }
 
   @include vp-767 {
-    padding: 0 25px;
+    padding: 0 23px;
     padding-top: 48px;
     padding-bottom: 37px;
     justify-content: center;
@@ -62,16 +71,20 @@
   color: $color-sapphire;
   letter-spacing: 0.03em;
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
+  margin-left: 7px;
 
   @include vp-1199 {
     font-size: 42px;
     line-height: 50px;
+    margin-left: -6px;
+    margin-bottom: 40px;
   }
 
   @include vp-767 {
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 43px;
   }
 }
 
@@ -116,13 +129,14 @@
   position: absolute;
   width: 80px;
   height: 80px;
-  top: 0;
+  top: 8px;
   left: 0;
 
   @include vp-767 {
     width: 68px;
     height: 68px;
     left: 16px;
+    top: -8px;
   }
 }
 
@@ -132,9 +146,9 @@
 }
 
 .reviews__button--prev {
-  left: 11px;
+  left: -1px;
 }
 
 .reviews__button--next {
-  right: 11px;
+  right: -1px;
 }
