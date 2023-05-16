@@ -9,7 +9,7 @@
 
   @include vp-767 {
     padding-top: 63px;
-    padding-bottom: 62px;
+    padding-bottom: 63px;
   }
 }
 
@@ -66,8 +66,8 @@
 
 .promotion__year {
   background-color: $color-torch-red;
-  padding-top: 32px;
-  padding-bottom: 44px;
+  padding-top: 35px;
+  padding-bottom: 43px;
   padding-left: 45px;
   padding-right: 45px;
   display: flex;
@@ -76,8 +76,9 @@
 
   @include vp-767 {
     align-items: center;
-    padding-top: 33px;
-    padding-left: 43px;
+    padding-top: 34px;
+    padding-left: 45px;
+    padding-bottom: 44px;
   }
 }
 
@@ -105,7 +106,7 @@
   line-height: 58px;
   color: $color-default-white;
   text-align: left;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 
   @include vp-767 {
     text-align: center;
@@ -237,9 +238,13 @@
     }
   }
 
+  @include vp-1199 {
+    padding-bottom: 27px;
+  }
+
   @include vp-767 {
     align-items: center;
-    padding-top: 30px;
+    padding-top: 29px;
     padding-bottom: 36px;
   }
 }
@@ -253,4 +258,5 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  background-color: $color-cobalt;
 }

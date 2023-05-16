@@ -6,7 +6,6 @@ const setupVideo = () => {
   const media = video.querySelector('.video__media');
   const button = video.querySelector('.video__button');
 
-
   button.addEventListener('click', () => {
     let iframe = createIframe();
     media.remove();
@@ -24,4 +23,3 @@ const createIframe = () => {
 };
 
 export {setupVideo};
-

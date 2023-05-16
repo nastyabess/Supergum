@@ -1,5 +1,4 @@
-.button-swiper--prev,
-.button-swiper--next {
+.button-swiper {
   position: absolute;
   top: 50%;
   width: 16px;
@@ -17,17 +16,15 @@
     width: 10px;
     height: 19px;
   }
-}
 
-.button-swiper--prev:not(:disabled):hover,
-.button-swiper--next:not(:disabled):hover {
-  color: $color-chambray;
-}
+  &:not(:disabled):hover {
+    color: $color-chambray;
+  }
 
-.button-swiper--prev:disabled,
-.button-swiper--next:disabled {
-  opacity: 0.5;
-  cursor: auto;
+  &:disabled {
+    opacity: 0.5;
+    cursor: auto;
+  }
 }
 
 .button-swiper--prev {
@@ -37,4 +34,3 @@
 .button-swiper--next {
   transform: translateY(-50%) rotate(180deg);
 }
-

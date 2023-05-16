@@ -64,12 +64,15 @@
 .footer__list {
   margin: 0;
   margin-left: 7px;
-  margin-top: 2px;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @include vp-1199 {
+    margin-top: 3px;
+  }
 
   @include vp-767 {
     display: block;
@@ -80,7 +83,6 @@
 }
 
 .footer__item {
-
   &:not(:last-child) {
     margin-right: 41px;
 
