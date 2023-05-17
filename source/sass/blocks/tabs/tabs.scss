@@ -183,7 +183,8 @@
 }
 
 .tabs__element span {
-  display: block;
+  position: relative;
+  display: inline-block;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -194,7 +195,6 @@
   margin: 0;
   margin-right: 14px;
   z-index: 1;
-  word-break: break-word;
 
   @include vp-767 {
     font-size: 48px;
@@ -205,8 +205,8 @@
   &::before {
     content: attr(data-price);
     position: absolute;
-    bottom: 13px;
-    left: 0;
+    bottom: 12px;
+    left: -16%;
     font-size: 100px;
     line-height: 110px;
     color: $color-whisper;
@@ -216,7 +216,7 @@
     @include vp-767 {
       font-size: 80px;
       bottom: 0;
-      left: 17px;
+      left: -18%;
     }
   }
 }
@@ -254,7 +254,6 @@
 }
 
 .tabs__element-wrapper {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
