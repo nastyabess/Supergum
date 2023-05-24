@@ -29,12 +29,17 @@
 .contacts__wrapper1 {
   margin-right: 50px;
 
+  @include vp-1243 {
+    margin-right: 0;
+    margin-left: 90px;
+  }
+
   @include vp-1199 {
     padding-top: 61px;
     padding-bottom: 68px;
     padding-left: 133px;
     padding-right: 163px;
-    margin-right: 0;
+    margin-left: 0;
     background-color: $color-sapphire;
   }
 
@@ -48,6 +53,10 @@
 
 .contacts__wrapper2 {
   margin-left: 120px;
+
+  @include vp-1243 {
+    margin-left: 60px;
+  }
 
   @include vp-1199 {
     margin-left: 0;

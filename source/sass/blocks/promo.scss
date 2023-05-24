@@ -152,10 +152,6 @@
   max-width: 660px;
   overflow: hidden;
 
-  @include vp-1199 {
-    max-width: 386px;
-  }
-
   @include vp-767 {
     max-width: 100%;
   }

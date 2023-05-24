@@ -31,9 +31,9 @@
   position: relative;
   width: 260px;
   min-height: 294px;
-  padding-top: 74px;
+  padding-top: 52px;
   padding-bottom: 32px;
-  padding-left: 38px;
+  padding-left: 43px;
   padding-right: 44px;
 
   @include vp-1199 {
@@ -44,7 +44,7 @@
   @include vp-767 {
     width: 100%;
     min-height: 274px;
-    padding-top: 64px;
+    padding-top: 43px;
     padding-bottom: 32px;
     padding-left: 16px;
     padding-right: 16px;
@@ -64,13 +64,15 @@
     z-index: -1;
   }
 
-  &:hover h3 {
-    top: 51px;
-
-    @include vp-767 {
-      top: 41px;
-    }
+  &:hover .coaches__slide-wrapper h3 {
+    position: relative;
+    top: 0;
   }
+}
+
+.coaches__slide-wrapper {
+  max-height: 210px;
+  overflow-y: scroll;
 }
 
 .coaches__slide-image {
@@ -125,7 +127,7 @@
   }
 }
 
-.coaches h3 {
+.coaches__slide-wrapper h3 {
   position: absolute;
   bottom: 23px;
   left: 50%;
@@ -142,7 +144,7 @@
   z-index: 1;
 }
 
-.coaches p {
+.coaches__slide-wrapper p {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -152,15 +154,18 @@
   color: $color-spindle;
   margin: 0;
   margin-bottom: 33px;
+  margin-top: -4px;
 }
 
 .coaches__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-left: 18px;
-  height: 130px;
-  overflow-y: scroll;
+  margin-left: 12px;
+
+  @include vp-767 {
+    margin-left: 17px;
+  }
 }
 
 .coaches__item {
@@ -196,7 +201,7 @@
   }
 
   @include vp-1199 {
-    left: -1px;
+    left: 1px;
   }
 }
 
@@ -208,6 +213,6 @@
   }
 
   @include vp-1199 {
-    right: 0;
+    right: 1px;
   }
 }

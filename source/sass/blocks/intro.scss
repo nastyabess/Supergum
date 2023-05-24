@@ -1,28 +1,24 @@
 .intro {
   margin-top: -23px;
-
-  @include vp-1199 {
-    margin-top: 19px;
-  }
-
-  @include vp-767 {
-    margin-top: 69px;
-  }
-}
-
-.intro__container {
   display: flex;
   padding-left: 18px;
   padding-right: 201px;
 
   @include vp-1199 {
+    margin-top: 19px;
     padding: 0;
     justify-content: center;
   }
 
   @include vp-767 {
+    margin-top: 69px;
     display: block;
   }
+}
+
+.intro__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .intro__wrapper {
@@ -35,7 +31,6 @@
   @include vp-1199 {
     padding-right: 31px;
     padding-top: 50px;
-    padding-bottom: 23px;
     max-width: 354px;
   }
 
@@ -44,7 +39,9 @@
     padding-top: 0;
     padding-bottom: 0;
     align-items: center;
-    max-width: none;
+    max-width: 320px;
+    min-width: 290px;
+    margin: 0 auto;
   }
 }
 
@@ -87,8 +84,6 @@
 
   @include vp-767 {
     margin-bottom: 23px;
-    min-width: 290px;
-    max-width: 320px;
   }
 }
 
@@ -123,6 +118,10 @@
   color: $color-default-white;
   cursor: pointer;
   display: block;
+
+  @include vp-767 {
+    width: 100%;
+  }
 
   @include hover-focus {
     opacity: 0.8;
@@ -164,15 +163,20 @@
   padding: 20px;
   cursor: pointer;
   user-select: none;
-  width: 230px;
+  display: block;
+  width: 233px;
+  align-self: flex-end;
+  margin-right: 62px;
 
   @include vp-1199 {
-    width: 183px;
+    width: 186px;
+    margin-right: 29px;
   }
 
   @include vp-767 {
     width: 100%;
     padding: 21px;
+    margin-right: 0;
   }
 
   &:disabled {

@@ -97,6 +97,12 @@
   transition: height 0.3s;
 }
 
+.tabs__element {
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
 .tabs__element-list {
   margin: 0;
   padding: 0;
@@ -111,11 +117,12 @@
 
   @include vp-1199 {
     grid-template-columns: 1fr;
-    gap: 40px;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 40px;
   }
 
   @include vp-767 {
-    gap: 37px;
+    row-gap: 37px;
   }
 }
 
@@ -128,6 +135,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 
   @include vp-1199 {
     padding: 56px 111px 60px;
@@ -137,7 +145,7 @@
     padding: 42px 35px 47px;
   }
 
-  @include hover {
+  &:hover {
     border: 7px solid $color-transparent;
     border-image: $border-gradient;
     border-image-slice: 1;
@@ -145,6 +153,25 @@
     a {
       background: $button-gradient;
       color: $color-default-white;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  @include active {
+    border: 7px solid $color-transparent;
+    border-image: $border-gradient;
+    border-image-slice: 1;
+
+    a {
+      background: $button-gradient;
+      color: $color-default-white;
+
+      &::before {
+        display: none;
+      }
     }
   }
 }
@@ -223,6 +250,7 @@
 
 .tabs__element a {
   display: block;
+  position: relative;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -233,12 +261,19 @@
   text-transform: uppercase;
   color: $color-sapphire;
   width: 206px;
-  padding: 24px;
-  border: 2px solid $color-sapphire;
+  padding: 26px;
+
   user-select: none;
 
-  @include hover-focus {
-    opacity: 0.6;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-transparent;
+    border: 2px solid $color-sapphire;
   }
 }
 
