@@ -183,10 +183,12 @@
 
   @include vp-767 {
     position: relative;
-    width: 320px;
+    width: 100%;
+    height: 100%;
     left: 0;
     bottom: 0;
     transform: none;
+    aspect-ratio: 1/0.5;
   }
 }
 
@@ -208,7 +210,7 @@
 .gym__video img {
   @include vp-767 {
     width: 100%;
-    height: 167px;
+    height: 100%;
     object-fit: cover;
   }
 }

@@ -1253,9 +1253,9 @@ textarea {
 }
 
 input:-webkit-autofill {
-  -webkit-box-shadow: inset 0 0 0 1000px #ffffff;
-          box-shadow: inset 0 0 0 1000px #ffffff;
-  -webkit-text-fill-color: #000000;
+  -webkit-box-shadow: inset 0 0 0 1000px #102654;
+          box-shadow: inset 0 0 0 1000px #102654;
+  -webkit-text-fill-color: #ffffff;
 }
 
 input,
@@ -2163,12 +2163,14 @@ button,
 @media (max-width: 767px) {
   .gym__video {
     position: relative;
-    width: 320px;
+    width: 100%;
+    height: 100%;
     left: 0;
     bottom: 0;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
+    aspect-ratio: 1/0.5;
   }
 }
 
@@ -2189,7 +2191,7 @@ button,
 @media (max-width: 767px) {
   .gym__video img {
     width: 100%;
-    height: 167px;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -2391,6 +2393,7 @@ button,
       -ms-grid-row-align: center;
       align-self: center;
   margin-bottom: 51px;
+  padding: 1px 0;
 }
 @media screen and (max-width: 767px) {
   .tabs__controls {
@@ -4232,11 +4235,11 @@ button,
 }
 
 .reviews__button--prev {
-  left: -1px;
+  left: 1px;
 }
 
 .reviews__button--next {
-  right: -1px;
+  right: 1px;
 }
 
 .contacts {
